@@ -1,0 +1,396 @@
+---
+exercises:
+        -
+                topic: Sounds and Letters
+                level: A1
+                title: "Search by dictionary (A1)<br>
+                Find words есть, июль, курить, любовь, обувь, октябрь, тетрадь, часть.<br> 
+                What does the last letter mean?<br>
+                (Hint: listen to the example sentences)"
+                answer: "All of the words stated end with ь. This letter doesn’t represent a sound, it indicates softness (palatalization) of a previous consonant." 
+                extra_task: ~
+        -
+                topic: Sounds and Letters
+                level: A2
+                title: "Search by analysis (all levels)<br> 
+                Look up forms of Imperf.Sing.2 and Perf.Sing.2. Listen to the example sentences. Does ь indicate softness at the end of these verb forms?"
+                extra_task: "Search by dictionary and look up the words мышь, ночь, помощь and молодёжь. Does ь indicate softness here?"
+                answer: "Сonsonants ж and ш in Russian are never soft (palatalized), so ь has no phonetic meaning when used after them.<br> 
+                The ь indicates specific grammar forms: for example, 2nd person singular (-ешь). Ь also indicates infinitive forms (-ть, -чь) and imperatives in singular (for example, ложись ‘lie down’). However, in the infinitive suffix -ть it also shows palatalization of т (as opposed to the -чь suffix, where ч is always soft).<br>
+                Ь as an indicator of grammar can also be found in nouns: in words like мышь, ночь, помощь, молодёжь the letter ь also doesn’t change the pronunciation of the word (ш and ж are always non-palatalized, while ч and щ are always palatalized, even when there’s no ь after them, like in the word врач). At the end of the noun in Nom.Sg -ь indicates that this noun is most likely feminine and belongs to the third declension.<br>
+                Note: there are some masculine nouns that end with -ь (names of the months, nouns denoting men, nouns that end with -тель)."
+                take_away_idea: "Ь usually indicates softness of the previous consonant. However, sometimes it has no phonetic function and doesn’t affect the way a word sounds, but indicates some grammatical properties of the word (2nd person singular verbs, infinitives, imperatives, and feminine nouns)."
+
+        -
+                topic: Sounds and Letters
+                level: A2
+                title: "Search by dictionary (all levels)<br> 
+                Look up words поделиться, испортиться and listen to the example sentences. As you can hear, испортиться - испортится and поделиться - поделится end with [tsa]. Why are they spelled differently?"
+                answer: "Ь doesn’t affect the way those words sound, but it does indicate the form of the verb: most reflexive infinitives end with -ться, while reflexive verbs in 3rd person singular end with -тся. Note that the combination тс (or тьс) is pronounced like ц [ts] without palatalization in both cases."
+
+        -
+                topic: Sounds and Letters
+                level: A1
+                title: "Search by dictionary (all levels)<br>
+                Find the words that begin with the combination of letters Ж, Ш + Ы. 
+                What do these words have in common?"
+                answer: "These words don’t exist! According to the spelling rules, letters Ж, Ш don’t combine with Ы, only with И.<br> 
+                Even though the consonants Ж and Ш in Russian are never soft (palatalized), you have to use И (which usually follows soft consonants) instead of Ы. The spelling doesn’t affect the pronunciation: you can listen to the examples with such words (жить, цирк, широкий etc.), it still sounds like Ы."
+                take_away_idea: "Letter combinations *жы and *шы are not possible in Russian."
+                
+        -
+                topic: Sounds and Letters
+                level: A1
+                title: "Search by dictionary (all levels)<br>
+                Find the words that begin with the combination of letters Ч, Щ + Я, Ю
+                What do these words have in common?"
+                answer: "These words don’t exist! According to the spelling rules, letters Ч, Щ don’t combine with Я and Ю, only with А, У.<br> 
+                Even though the consonants Ч and Щ in Russian are always soft (palatalized), you have to use А or У (which usually follow non-palatalized consonants) instead of Я or Ю. The spelling doesn’t affect the pronunciation: you can listen to the examples with such words (чай, чудо), ч still sounds soft."
+                take_away_idea: "Letter combinations *чя, *щя, *чю, and *щю are not possible in Russian."
+        
+        -
+                topic: Sounds and Letters
+                level: A1
+                title: "Search by dictionary (A1)<br>
+                Find words весёлый, дешёвый, жёлтый, зелёный, лёгкий, серьёзный, чёрный. How do you pronounce them? Which vowel is stressed?<br>
+                (Hint: listen to the example sentences)"
+                answer: "In all the adjectives from the list ё is stressed. It’s always stressed in Russian words (for example, in nouns ребёнок, тётя, учёный as well)."
+                take_away_idea: "Ё is always stressed in Russian words.<br> 
+                However, many speakers of Russian don’t consider the difference between е and ё important and use the same letter without dots in both cases. Try to memorize the way words with ё look, because sometimes they might appear a bit different."
+                extra_task: ~
+
+        -
+                topic: Sounds and Letters
+                level: A1
+                title: Search by dictionary (all levels)<br>
+
+                        Find all the words that begin with a-<br>
+
+                        What do these words have in common?
+                answer: "All of the words that begin with a- in the SMARTool dictionary are borrowed words in Russian.<br>
+
+                        Native Russian words do not begin with a-. the only exceptions are: ахать, ахнуть ‘say ah!’<br>
+
+                        In general, most Russian words begin with a consonant. This includes words that begin with е-, ю-, я-, which begin with the consonant j- (sounds like y- in English). If a Russian word begins with a vowel, it is one of these: и-, о-, or у-."
+                take_away_idea: If you encounter a long new word that begins with a vowel, it is probably a borrowed word. If you sound it out, you will probably recognize it. For example, аэропорт means ‘airport’, and you don’t need a dictionary to figure that out.
+                extra_task: ~
+                
+        -
+                topic: Sounds and Letters
+                level: A1
+                title: Search by dictionary (all levels)<br>
+
+                        Find all the words that begin with э-<br>
+
+                        What do these words have in common?
+                answer: "All of the words that begin with э- in the SMARTool dictionary are borrowed words in Russian.<br>
+
+                        Native Russian words do not begin with э-. the only exceptions are: этот ‘this/that’ and other forms of this word (эта, эти, etc.)<br>
+
+                        In general, most Russian words begin with a consonant. This includes words that begin with е-, ю-, я-, which begin with the consonant j- (sounds like y- in English). If a Russian word begins with a vowel, it is one of these: и-, о-, or у-."
+                take_away_idea: If you encounter a long new word that begins with a vowel, it is probably a borrowed word. If you sound it out, you will probably recognize it. For example, экономический means ‘economic’, and you don’t need a dictionary to figure that out.
+                extra_task: ~
+                
+        -
+                topic: Sounds and Letters
+                level: A1
+                title: Search by dictionary (all levels)<br>
+
+                        Find all the words that begin with ф-<br>
+                        What do these words have in common?
+                extra_task: If the meaning of the word in Russian differs from a similar sounding word in English, try to guess why.        
+                answer: "All of the words that begin with ф- in the SMARTool dictionary are borrowed words in Russian.<br>
+                Native Russian words do not begin with ф-. The only exceptions are onomatopoeic words фыркать ('snort'), фукать (‘say ew’).<br>
+                фабрика - fabric, same etymology (Latin faber - “a workshop, art, trade, product of art, structure, fabric”)<br>
+                фамилия - family name"
+                take_away_idea: If you encounter a new word that begins with ф-, it is probably a borrowed word. If you sound it out, you will probably recognize it. For example, факультет means ‘faculty’, and you don’t need a dictionary to figure that out.
+                        
+        -
+                topic: Sounds and Letters
+                level: A1
+                title: Search by dictionary (all levels)<br>
+
+                        Find all the words that begin with ге-<br>
+                         What do these words have in common?
+                answer: "All of the words that begin with ге- in the SMARTool dictionary are borrowed words in Russian.<br>
+
+                        Native Russian words do not begin with ге-."
+                take_away_idea: "If you encounter a new word that begins with ге-, it is probably a borrowed word. If you sound it out, you will probably recognize it. For example, ген means ‘gene’, and you don’t need a dictionary to figure that out."
+
+        -
+                topic: Sounds and Letters
+                level: A1
+                title: "Search by dictionary (A1)<br> 
+                Find the words август, английский, англичанин, апрель, воскресенье, вторник, московский, российский. Compare them with their translations in English. All these words (and some others) have a common difference from the translations. What is the difference?"
+                extra_task: "One of the examples for both московский and российский is capitalized, as opposed to other two. Why?" 
+                answer: "All of the words aren’t capitalized in Russian, but are capitalized in English. Names of months and days of the week, as well as nouns and adjectives that describe ethnic identity all start with lowercase letters. Even though toponyms are capitalized (Россия, Москва), adjectives derived from them aren’t (российский, московский). <br> 
+                Exceptions are cases like Московская область, Российская Федерация, where the adjective itself is a proper name."
+                take_away_idea: "In Russian, less words are capitalized than in English. The two main cases when you should capitalize a word are proper names (Алексей, Париж) and the first word in a sentence (Мы идём домой)."
+                
+        -
+                topic: Sounds and Letters
+                level: A2/B1
+                title: "Search by dictionary (all levels)<br>
+                Find words выходить (IPFV), выйти (PFV), выносить (IPFV), вынести (PFV) and listen to the example sentences. How do these perfective and imperfective verbs differ in pronunciation?" 
+                answer: "In perfective verbs (for example, выйти, вынести) with вы- the prefix is always stressed.<br> 
+                In imperfective verbs (for example, выходить, выносить) with вы- the stress is usually after the root/in the latter part of the word."
+                take_away_idea: "If you come across a perfective verb with the prefix вы-, you should read it with the stress on the prefix"
+                extra_task: ~
+                
+        -
+                topic: Meanings of words
+                level: A1
+                title: "Search by dictionary (A1)<br>
+
+                        Look up these words: российский, русский, иностранный. Look at the sentences.<br>
+
+                        What kinds of items can be российский and what kind can be русский? Can you compare this with the use of the word иностранный?"
+                answer: "We use российский to describe items connected to Russia as a state (паспорт, Федерация).<br>
+
+                        We use русский to describe items connected to the Russian language, culture, and ethnic identity (алфавит, литература, авангард).<br>
+
+                        For many items, you can use both adjectives, depending on what you want to emphasize.
+
+                        For example: российские журналисты are journalists from Russia, where as русские журналисты are journalists who are Russian.<br>
+
+                        The word иностранный can be used to describe both geopolitical relationships and those of language and culture."
+                take_away_idea: русский is about ethnic identity, российский is about a relationship to the Russian Federation
+                extra_task: ~
+                
+        -
+                topic: Morphology, Meanings of words
+                level: B1/B2
+                title: "Search by dictionary (all levels)<br>
+                Find words that begin with бес- and без-. What do most of these words have in common?"
+                extra_task: "Why do some words use без- and other бес-? Is there a rule (you might know it already)?<br>
+                This is a prefix. Try to find similar words without the prefix (usually they are antonymous), compare the pairs."
+                answer: "Без- and бес- are negative prefixes with a meaning ‘lack of, not’ (similar to dis-, a-, un-, -less and some others in English).<br>
+                Pairs: безвкусный - вкусный, безграмотный - грамотный, бездействовать - действовать, безопасность - опасность, безопасный - опасный, бескорыстный - корыстный, бесплатный - платный, бесполезный - полезный, беспорядок - порядок, бесшумный - шумный.<br>
+                The choice between без- and бес- is motivated by the next letter in the word: if the consonant is unvoiced (к, п, с, т, ф, х, ц, ч, ш, щ), you add бес-, if the consonant is voiced (б, в, г, д, ж, з, й, л, м, н, р) or the word begins with a vowel (a, о, у, ы, э, и), без- is added."
+                take_away_idea: "If you encounter a word with бес- or без-, there’s a chance that this word has an antonym without the prefix.<br> 
+                However, some pairs are not antonymous: for example, безнадёжный is hopeless, while надёжный is reliable (and its antonym is ненадёжный ‘unreliable’)."
+
+        -
+                topic: Morphology
+                level: All levels
+                title: "Search by analysis (all levels)<br>
+
+                        Look up these analyses: Fem.Sing, Masc.Sing, Neut.Sing, and Plur<br>
+
+                        What are these forms? When do we use them? <br>
+                        (Hint: Is there a verb in the same clause? If so, which verb?)"
+                answer: "These are short form adjectives.<br>
+
+                        Notice that рад ‘glad’ occurs only in short forms, has no long forms."
+                take_away_idea: We use short form adjectives in sentences with the verb быть ‘be’ (and synonyms), which is also often omitted in the present tense, as in Мы всегда рады вас видеть. ‘We’re always happy to see you.’
+                extra_task: ~
+
+        -
+                topic: Case and Prepositions
+                level: A1
+                title: "Search by dictionary (all levels)<br>
+
+                        Look up these words: кухня, ресторан<br>
+
+                        Read the sentences. There are two patterns there that have to do with going to a place, being in a place, and going away from a place. Can you identify the two patterns?<br>
+
+                        Once you have found the two patterns, look up and try to sort these words into two groups according to the two patterns:<br>
+
+                        страна, мир, место, дом, школа, город, квартира, класс, свет, центр, улица, комната, район, театр, парк, музей, стадион, гостиница, остановка, вокзал, факультет, бассейн, общежитие, Россия, аэропорт, фабрика, столовая, аптека, номер, завод, университет, клуб, концерт, сад, площадь, здание, столица, кабинет, лекция, этаж"
+                answer: "The two patterns are:<br>
+
+                        на кухню (Accusative), на кухне (Locative), с кухни (Genitive)<br>
+
+                        в ресторан (Accusative), в ресторане (Locative), из ресторана (Genitive)<br>
+
+                        The pattern with в and из is used more than the one with на and с"
+                take_away_idea: The preposition на is mostly used with large, open places (стадион, фабрика, завод, остановка, свет, место, вокзал), surfaces (площадь, этаж), or events (концерт, лекция). With other places we use the preposition в.
+                extra_task: ~
+                
+        -
+                topic: Morphology, Singular vs. Plural
+                level: A1
+                title: "Search by dictionary (А1)<br>
+                Find words человек, ребёнок, год and look at the forms in which they are used. Do you notice anything unusual?"
+                answer: "Words человек, ребёнок, год have different stems in singular and plural forms: человек - люди, ребёнок - дети, год - лет."
+                take_away_idea: "Some high frequency words might look different in singular and plural, it’s important to pay attention and memorize them."
+                extra_task: ~
+                
+        -
+                topic: Morphology
+                level: A2/B1
+                title: "Search by dictionary (А1)<br>
+                Find the words плохой, хороший and look at the forms in which they are used. Do you notice anything unusual?"
+                answer: "Words плохой, хороший have different stems in positive and comparative forms: хороший - лучше, плохой - хуже."
+                take_away_idea: "Some high frequency adjectives might look different in positive, comparative and superlative (лучший ‘best’, худший ‘worst’) forms, it’s important to pay attention and memorize them."
+                
+        -
+                topic: Morphology
+                level: A2/B1
+                title: "Search by dictionary (A2)<br>
+                1) Find words вернуть - вернуться, возвращать - возвращаться, начинать - начинаться, открывать - открываться, показать - показаться.<br>
+                How does -ся affect the meaning of the verb?<br>
+                2) Look for words заканчивать, закрывать, поднимать, помыть. Try to guess what they would mean with -ся added. You can check it by choosing all levels in the search bar: they are included at the higher levels.<br>
+                3) Look for words интересоваться, познакомиться, продолжаться, одеваться. Try to guess what they would mean without the -ся. You can check it by choosing all levels in the search bar: they are included at the higher levels."
+                answer: "-ся is a reflexive suffix. It adds the meaning of ‘self’ to the verb.<br> 
+                For example, Я вернул книгу в библиотеку - I returned the book to the library <br>
+                Я вернулся домой - I returned (myself) home <br>
+                Sometimes -ся adds passive meaning to the verbs (Note: ‘passive’ verbs with -ся are not actually in the passive voice): <br>
+                Я открыл магазин в 2010 году - I opened a shop in 2010 <br>
+                Магазин открылся в 2012 году - The shop was opened (lit. opened itself) in 2010. <br>
+                You can interpret those verbs as ‘self’ verbs as well."
+
+        -
+                topic: Meanings of words
+                level: A1
+                title: "Search by dictionary (A1) <br>
+                Find words старый and старший, молодой and младший, look at the sentences. What is the difference between words in each pair?"
+                answer: "Words старый and молодой refer to general age of a person or an item, while старший and младший refer to the age in comparison to someone else: старший брат implies that there’s another sibling who’s younger (it can also refer to status: старший научный сотрудник - Senior Researcher)."
+                
+        -
+                topic: Meanings of words
+                level: A1
+                title: "Search by dictionary (A1) <br>
+                Find words мама - мать, папа - отец. These are different ways to refer to parents. What is the difference between the words in these pairs?"
+                answer: "Мама and папа are more informal variants. Usually they refer to a specific person (often the speaker's parents). <br>
+                Мать and отец are more formal, and are often used to describe the concept of a parent, a role rather than a specific person (but not always!). If someone refers to their parent as мать or отец, it’s likely that this person not particularly close to them."
+                
+        -
+                topic: Meanings of words
+                level: A1
+                title: "Search by dictionary (A1) <br>
+                Find words голубой, синий. How are they different?"
+                answer: "Голубой means light blue, синий means dark blue. To describe eyes, the usual word is голубой, синий doesn’t typically refer to eye color.<br> 
+                Голубой is the color of highlighted words in SMARTool, синий is the color on the SMARTool logo."
+                take_away_idea: "English lexicon doesn’t differentiate between lighter and darker blue, while Russian doesn’t have a single word for blue. Light and dark blue are considered two separate colors. The primary color is cиний.<br> 
+                When talking about colors of the rainbow, Russians would say голубой in place of English ‘blue’ and cиний in place of English ‘indigo’."
+
+        -
+                topic: Singular vs. Plural
+                level: A1
+                title: "Search by topic and choose еда (food)<br>
+
+                        Toggle through all the entries and look at the nouns. Notice what words appear in singular and what words appear in plural. Can you make some generalizations?"
+                answer: "Only singular in the SMARTool: вода, масло (NB! both ‘butter’ and ‘oil’), сок, сыр, мороженое, сахар, картошка (pluralis også mulig), колбаса (pluralis også mulig), чай, пиво, хлеб, мясо, молоко, вино, еда<br>
+
+                        [Note: картошка and колбаса can also appear in plural, though less often.]<br>
+
+                        Both singular and plural in the SMARTool: продукт (usually plural if referring to food), салат (plural refers to various kinds or portions of salad), яйцо, суп (plural refers to various kinds of soup), соль (if plural usually not about food, but about chemicals), курица (plural куры is used for animals, not food), рыба (plural рыбы is used for animals, not food), яблоко<br>
+
+                        Only plural in the SMARTool: фрукт, овощ"
+                take_away_idea: Many foods are primarily understood as substances in Russian, even if they come in fairly large pieces (potatoes, sausages, fish, chicken). These words tend to occur mostly or exclusively in the singular. Note that фрукты, овощи, продукты (when it means ‘groceries’) almost always occur in the plural, probably because they are not homogeneous (there are lots of kinds of fruits and vegetables and groceries). Food items that one tends to count (apples, eggs), are used in both singular and plural.
+                extra_task: ~
+
+        -
+                topic: Case and Prepositions
+                level: A1
+                title: "Search by analysis and select Dat.Sing.<br>
+                This will show you words that occur often in the Dative case, singular. Sort all the sentences into two groups. Put the sentences with prepositions before the Dative case in one group, and sentences without a preposition that governs the Dative in the other group.<br> 
+                Which prepositions govern the Dative case? What is the difference between them? What kind of nouns do you find in the Dative case without a preposition?"
+                answer: The prepositions are по (used with topics or ways to do things) and к (used with directions, including metaphorical ones). The nouns that appear in the Dative without a preposition refer to people.
+                take_away_idea: When the Dative case is used without a preposition, it mainly expresses how experiences impact human beings.
+                extra_task: ~
+                
+        -
+                topic: Morphology
+                level: A2/B1
+                title: "Search by dictionary (all levels)<br>
+                Find words выбегать, выводить, вывозить, выгонять, выезжать, выйти, вылетать, вынимать, вытаскивать, выходить. <br>
+                What meaning do these verbs have in common?"
+                answer: "Вы- is a verb prefix with the meaning ‘out (of something)’. All of the verbs have an element of meaning ‘removing something (or someone, oneself) from a container’"
+                take_away_idea: "Some verb prefixes in Russian modify meanings of verbs in specific ways. If you know the verb without the prefix, you likely can figure out what it means with one." 
+                extra_task: ~
+
+        -
+                topic: Morphology
+                level: A2
+                title: "Search by dictionary (A2)<br>
+                Find words поздравить, поздравлять and look at the sentences. What is the difference (in semantics) between perfective and imperfective examples?" 
+                answer: "Perfective поздравить denotes an action that occurs once, and the result of said action (someone has congratulated someone else) is important. Perfective can’t be used in the Present tense.<br>
+                Imperfective поздравлять denotes an action that occurs regularly (to congratulate every year) or continuously.<br> 
+                Verb поздравлять has an interesting feature: when used in the Present tense 1st person, it serves as a declaration. You congratulate someone just by stating that you congratulate them."
+                take_away_idea: "Imperfective verbs denote continuous process or a regular action. Perfective verbs denote an action that is done once or a result-oriented action."
+
+        -
+                topic: Meanings of words
+                level: A1/A2
+                title: "Search by dictionary (A1)<br>
+                Find words старый, молодой, новый. What is the relationship between those adjectives? Are they synonyms or antonyms?"
+                answer: "Молодой refers to someone or something young (or something that hasn’t been existing for a long time). <br>
+                Новый refers to something new, usually man-made, that was recently created (and often this something is a replacement for a previous similar item). <br>
+                Старый is antonymous to both молодой and новый because it has multiple meanings: it can refer to both someone of old age (старый человек) and someone/something that is not new (старый друг, старая юбка).<br> 
+                In short, the relationship between старый, молодой, новый is similar to English old, young, new."
+
+        -
+                topic: Meanings of words
+                level: A2
+                title: "Search by dictionary (A1)<br>
+                Find the word лёгкий and look at the example sentences. Does it always mean the same thing (does it always translate to English the same way)?"
+                answer: "Adjective лёгкий does not only mean ‘light’ (as in лёгкая сумка 'light bag', лёгкая куртка 'light jacket'), but also ‘easy’ (for example, лёгкое задание ‘easy task’). Adverb легко usually also has a meaning of ‘easy’ (example sentence is in the SMARTool)."
+                
+        -
+                topic: Meanings of words
+                level: A2
+                title: "Search by dictionary (A1)<br>
+                Find the word бедный and look at the example sentences. Does it always mean the same thing (does it always translate to English the same way)?"
+                answer: "Adjective бедный can mean both ‘lacking something (usually money)’ and ‘miserable, evoking pity’ (similar to the way ‘poor’ is used in English)."
+
+        -
+                topic: Meanings of words
+                level: B1
+                title: "Search by dictionary (B1)<br>
+                Find words одевать, надевать.<br>
+                How do they differ in meaning?"
+                answer: "Надевать usually has some item of clothing as the verb object: Я надеваю шапку (на брата) — I put the hat on my brother.<br> 
+                Одевать usually has a person who is being dressed as the verb object: Я одеваю брата — I dress my brother."
+                take_away_idea: "Надевать has an inanimate object, одевать — animate. The words might sound similar, but try to not mix them up. <br> 
+                Even some native speakers of Russian confuse these verbs. There’s a useful mnemonic that helps with differentiating the verbs: надевать одежду, одевать Надежду (put on clothes, dress Nadezhda)."
+                
+        -
+                topic: Meanings of words
+                level: B1/B2
+                title: "Search by dictionary (all levels)<br>
+                Find words бесценный, ценный. What are their meanings? Is there something unusual about the pair?"
+                answer: "Usually prefix бес- changes the meaning of the word to an opposite. However, бесценный is synonymous to ценный: ценный means something valuable, with high price, while бесценный means something so valuable that you cannot buy it, priceless."
+
+        -
+                topic: Meanings of words
+                level: B2
+                title: "Search by dictionary (B2)<br>
+                Find all the words that begin with благо-. What does element благо- mean?"
+                answer: "Благо means ‘something good’. Words that include the element благо- have a positive meaning, and often are (or were) associated with the Russian Orthodox Church."
+  
+        -
+                topic: Meanings of words
+                level: B2
+                title: "Search by dictionary (all levels)<br>
+                Find words необыкновенный, необычный and look at the example sentences. Try to define the difference between them."
+                answer: "Необычный refers to something that is atypical, unusual. This adjective is mostly neutral.<br>
+                Необыкновенный refers to something that is not just unusual, but rare, and also extreme, surprising, extraordinary. Usually the adjective is explicitly positive, sometimes it can also be explicitly negative depending on the context (but it’s not neutral)."
+                take_away_idea: "Необыкновенный is extreme and explicitly positive, while необычный is neutral and possibly negative."
+
+        -
+                topic: Morphology, Meanings of words
+                level: B1/B2
+                title: "Search by dictionary (all levels)<br>
+                Find words журналист - журналистка, житель - жительница, учитель - учительница, внук - внучка. Do these pairs have some differences in the most frequent forms? If so, what is the reason?"
+                answer: "In a ‘gender pair’ masculine nouns that refer to people (often by occupation or status) occur in plural more often than in singular, while feminitives are more likely to occur in singular.<br> 
+                The reason: masculine nouns in plural refer to a group of people regardless of their gender, it’s the ‘neutral’ way to name the group, while feminine nouns in plural can be used to underline that the group consists only of women (but not always: Все учителя в нашей школе — женщины.)"
+                take_away_idea: "In Russian, if you want to name a group of people, you use the masculine noun in plural. You would only use the feminine variant in plural if the group you’re talking about consists exclusively of women and you want to emphasize that."
+
+        -
+                topic: Morphology, Meanings of words
+                level: B1/B2
+                title: "Search by dictionary (all levels)<br>
+                Find all the words that begin with один-, одно-, един-. What do they have in common? What do those elements mean?"
+                answer: "Elements один-, одно-, един- all mean ‘one’.<br>
+                Один- usually means ‘single’ (одинокий) or ‘the same’ (одинаковый).<br>
+                Одно- usually means ‘having only one’ (одноместный, одноразовый) or ‘sharing one’ (одноклассник).<br>
+                Един- means ‘united’ (единый, единомышленник) or ‘only one’ (единственный)."
+
+        -
+                topic: Morphology
+                level: B2
+                title: "Search by analysis (all levels)<br> 
+                Look up the forms of Imperf.Gerund and Perf.Gerund. What is the difference between Perfective and Imperfective Gerunds in Russian? How do they relate to the situation described in the sentence?"
+                answer: "Imperfective Gerunds describe an action that happens simultaneously with the verb (‘while G-ing, V’), and Perfective Gerunds describe an action that ends by the time the situation denoted by the verb begins (‘after G-ing, V’)."
