@@ -1,0 +1,17 @@
+---
+exercises:
+        -
+                level: A1
+                search_by: topic (A1) and choose Магазин (shopping)
+                write: 1 sentence using words from the topic. You can look through the words by clicking green buttons with arrows to the left of the word.
+                help_word: купить, одежда
+                construction:
+                        - красивая одежда, удобная одежда, постирать одежду, я хочу купить + Acc, он/она
+                        - купил/купила (себе) + Acc
+                text_example:
+                        - Я хочу купить сувенир. (или ограничиваемся одеждой?)
+                        - Она купила лампу.
+                        - Эта одежда очень красивая(, но не очень удобная).
+                        - Он купил себе фотоаппарат.
+
+        
