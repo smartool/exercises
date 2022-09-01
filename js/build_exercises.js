@@ -223,7 +223,7 @@ function build_exercise(exercise_id) {
     if (document.title.split(" ")[0] == "Treasure") {
         task_title.innerHTML = `${exercise_id + 1}. ${data[exercise_id]["topic"]}&ensp;<i style="font-weight:normal">${data[exercise_id]["level"]}</i>`;
     } else {
-        task_title.innerHTML = `${exercise_id + 1}.&ensp;<i style="font-weight:normal">${data[exercise_id]["level"]}</i>`;
+        task_title.innerHTML = `<i style="font-weight:normal">${data[exercise_id]["name"]}</i>`;
     }
     
     
