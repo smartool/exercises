@@ -2,9 +2,9 @@ const tree = document.createDocumentFragment();
 
 
 if (document.title.split(" ")[0] == "Treasure") {
-    let r = await axios.get("https://raw.githubusercontent.com/miltend/smartool_exercises/master/data/treasure_hunt.yml");
+    var r = await axios.get("https://raw.githubusercontent.com/smartool/exercises/master/data/treasure_hunt.yml");
 } else {
-    let r = await axios.get("https://raw.githubusercontent.com/miltend/smartool_exercises/master/data/story_time.yml");
+    var r = await axios.get("https://raw.githubusercontent.com/smartool/exercises/master/data/story_time.yml");
 }
 
 
@@ -187,15 +187,15 @@ function build_exercise(exercise_id) {
         main_content.appendChild(instructions);
     }
     if (data[exercise_id]["help_word"] != null) {
-        let instructions = document.createElement("div");
-        instructions.innerHTML = `Helpful words to use: ${data[exercise_id]["help_word"]}`;
-        main_content.appendChild(instructions);
+        let help_words = document.createElement("div");
+        help_words.innerHTML = `Helpful words to use: ${data[exercise_id]["help_word"]}`;
+        main_content.appendChild(help_words);
     }
-    if (data[exercise_id]["write"] != null) {
-        let instructions = document.createElement("div");
-        instructions.innerHTML = `<b>Write </b> ${data[exercise_id]["write"]}`;
-        main_content.appendChild(instructions);
-    }
+    // if (data[exercise_id]["write"] != null) {
+    //     let instructions = document.createElement("div");
+    //     instructions.innerHTML = `<b>Write </b> ${data[exercise_id]["write"]}`;
+    //     main_content.appendChild(instructions);
+    // }
 
 
     let answer = document.createElement("div");
@@ -214,7 +214,32 @@ function build_exercise(exercise_id) {
         
         answ_button.setAttribute("style", "margin: 3px")
 
-        let new_answer = data[exercise_id]["answer"]
+        let new_answer = ""
+
+        if (data[exercise_id]["answer"] != null) {
+            new_answer += data[exercise_id]["answer"]
+
+        }
+
+        if (data[exercise_id]["construction"] != null) {
+            let constr_amount = Object.keys(data[exercise_id]["construction"]).length
+            new_answer += "<b>Constructions you can use:</b><br>"
+            for (let id = 0; id < constr_amount; id++) {
+                // let construction = document.createElement("div");
+                new_answer += data[exercise_id]["construction"][id] + "<br>";
+                // answer.appendChild(construction);
+            }
+        }
+
+        if (data[exercise_id]["text_example"] != null) {
+            let text_amount = Object.keys(data[exercise_id]["text_example"]).length
+            new_answer += "<b>Examples of texts:</b><br>"
+            for (let id = 0; id < text_amount; id++) {
+                // let text = document.createElement("div");
+                new_answer += data[exercise_id]["text_example"][id] + "<br>";
+                // answer.appendChild(text);
+            }
+        }
 
         answ_button.onclick = function() {
             show_answer(answer_text, new_answer);
@@ -226,22 +251,7 @@ function build_exercise(exercise_id) {
         main_content.appendChild(answ_button)
         main_content.appendChild(answer)
 
-        if (data[exercise_id]["construction"] != null) {
-            let constr_amount = Object.keys(data[exercise_id]["construction"]).length
-            for (let id = 0; id < constr_amount; id++) {
-                let construction = document.createElement("div");
-                construction.innerHTML = data[exercise_id]["construction"][id];
-                main_content.appendChild(construction);
-            }
-        }
-
-        if (data[exercise_id]["text_example"] != null) {
-            let text_amount = Object.keys(data[exercise_id]["text_example"]).length
-            for (let id = 0; id < text_amount; id++) {
-                let text = document.createElement("div");
-                text.innerHTML = data[exercise_id]["text_example"][id];
-                main_content.appendChild(text);
-        }
+        
 
 }
 
