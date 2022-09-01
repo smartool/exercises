@@ -22,12 +22,6 @@ for (let key of Object.keys(json_data)) {
 
 const data = records[0]["exercises"]
 
-
-
-const level_part = document.createElement("div")
-level_part.setAttribute("class", "container px-4")
-level_part.setAttribute("style", "margin-top: 20px")
-
 var main_content = document.createElement("div")
 main_content.setAttribute("id", "main")
 main_content.setAttribute("class", "container px-4")
@@ -45,29 +39,108 @@ function show_answer(x, answer_key) {
     }
 }
 
-function choose_level() {
-    main_content.innerHTML = ""
-    let level = select_level.options[select_level.selectedIndex].text
-    for (var exercise_id = 0; exercise_id < exercises_amount; exercise_id++) {
-        let level_from_db = data[exercise_id]["level"]
-        if (level == "All levels") {
-            build_exercise(exercise_id)
-        } else if (level_from_db.length == 5) {
-            var levels = level_from_db.split("/")
-            if (level == levels[0] || level == levels[1]) {
-                build_exercise(exercise_id)
+function choose_ex() {
+    if (document.title.split(" ")[0] == "Treasure") {
+        main_content.innerHTML = ""
+        let level = select_level.options[select_level.selectedIndex].text
+        let topic = select_topic.options[select_topic.selectedIndex].text    
+        for (var exercise_id = 0; exercise_id < exercises_amount; exercise_id++) {
+            let level_from_db = data[exercise_id]["level"]
+            let topic_from_db = data[exercise_id]["topic"]
+
+            if (level == "All levels" || level_from_db == "All levels") {
+                if (topic == topic_from_db || topic == "All topics") {
+                    build_exercise(exercise_id)
+                }
+            } else if (level_from_db.length == 5) {
+                var levels = level_from_db.split("/")
+                if (level == levels[0] || level == levels[1]) {
+                    if (topic == topic_from_db || topic == "All topics") {
+                        build_exercise(exercise_id)
+                    }
+                }
+            } else if (level == level_from_db || level == "All levels") {
+                if (topic == topic_from_db || topic == "All topics") {
+                    build_exercise(exercise_id)
+                }
             }
-        } else if (level == level_from_db || level_from_db == "All levels") {
-             
-                build_exercise(exercise_id)
+
+
+
+
+
+
+
+
+            // if (level == "All levels" & topic == "All topics") {
+            //     build_exercise(exercise_id)
+            // } else if (level_from_db.length == 5) {
+            //     var levels = level_from_db.split("/")
+            //     if (level == levels[0] || level == levels[1]) {
+            //         if (topic == topic_from_db || topic == "All topics") {
+            //             build_exercise(exercise_id)
+            //         }
+                    
+            //     }
+            // } else if (level == level_from_db || level == "All levels") {
+            //      if (topic == topic_from_db || topic == "All topics") {
+            //         build_exercise(exercise_id)
+            //      }
+                    
+                
+            // }
             
         }
-        
+    } else {
+        main_content.innerHTML = ""
+        let level = select_level.options[select_level.selectedIndex].text
+        for (var exercise_id = 0; exercise_id < exercises_amount; exercise_id++) {
+            let level_from_db = data[exercise_id]["level"]
+            if (level == "All levels") {
+                build_exercise(exercise_id)
+            } else if (level_from_db.length == 5) {
+                var levels = level_from_db.split("/")
+                if (level == levels[0] || level == levels[1]) {
+                    build_exercise(exercise_id)
+                }
+            } else if (level == level_from_db || level_from_db == "All levels") {
+                
+                    build_exercise(exercise_id)
+                
+            }
+            
+        }
     }
+    
 }
 
 
+// function choose_topic() {
+//     main_content.innerHTML = ""
+//     let topic = select_topic.options[select_topic.selectedIndex].text
+//     for (var exercise_id = 0; exercise_id < exercises_amount; exercise_id++) {
+//         let topic_from_db = data[exercise_id]["topic"]
+//         if (topic == "All topics") {
+//             build_exercise(exercise_id)
+//         } 
+//         // else if (level_from_db.length == 5) {
+//         //     var levels = level_from_db.split("/")
+//         //     if (level == levels[0] || level == levels[1]) {
+//         //         build_exercise(exercise_id)
+//         //     }
+//         // } 
+//         else if (topic == topic_from_db || topic_from_db == "All topics") {
+             
+//                 build_exercise(exercise_id)
+            
+//         }
+        
+//     }
+// }
 
+var level_part = document.createElement("div")
+level_part.setAttribute("class", "container px-4")
+level_part.setAttribute("style", "margin-top: 20px")
 
 var form_level = document.createElement("div")
 form_level.setAttribute("class", "float-end")
@@ -86,19 +159,21 @@ for (const ind in array_levels) {
     option.setAttribute("value", array_levels[ind])
     option.innerHTML = array_levels[ind]
     select_level.appendChild(option)
+    if (array_levels[ind] == "All levels") {
+        option.setAttribute("selected", "selected")
+    }
 }
 
 
-// var levels = document.getElementById("level")
+
 let level_button = document.createElement("input")
 level_button.setAttribute("type", "button")
-// choose_button.setAttribute("onclick", "choose_level()")
 level_button.setAttribute("value", "Choose")
 
 level_button.setAttribute("class", "btn btn-outline-primary btn-sm")
 
 level_button.onclick = function() {
-    choose_level();
+    choose_ex();
 };
 
 form_level.appendChild(select_level)
@@ -107,11 +182,50 @@ form_level.appendChild(level_button)
 
 level_part.append(form_level)
 
+if (document.title.split(" ")[0] == "Treasure") {
+    var topic_part = document.createElement("div")
+    topic_part.setAttribute("class", "container px-4")
+    topic_part.setAttribute("style", "margin-top: 20px")
+    
+    var form_topic = document.createElement("div")
+    form_topic.setAttribute("class", "float-end")
+    form_topic.innerHTML = "Topic:"
+    
+    var select_topic = document.createElement("select")
+    select_topic.setAttribute("name", "topic")
+    select_topic.setAttribute("id", "topic")
+    select_topic.setAttribute("class", "form-select")
+    
+    var array_topics = ["Sounds and Letters", "Meanings of words", "Morphology", "Case and Prepositions",
+                        "Singular vs. Plural", "All topics"]
+    
+    for (const ind in array_topics) {
+        let option = document.createElement("option")
+        option.setAttribute("value", array_topics[ind])
+        option.innerHTML = array_topics[ind]
+        select_topic.appendChild(option)
+        if (array_topics[ind] == "All topics") {
+            option.setAttribute("selected", "selected")
+        }
+    }
+    
+    form_topic.appendChild(select_topic)
+    
+    topic_part.append(form_topic)
+}
+
+
+
 
 function build_exercise(exercise_id) {
     var task_title = document.createElement("h3");
     task_title.setAttribute("style", "margin-top: 30px");
-    task_title.innerHTML = `${exercise_id + 1}. ${data[exercise_id]["topic"]}&ensp;<i style="font-weight:normal">${data[exercise_id]["level"]}</i>`;
+    if (document.title.split(" ")[0] == "Treasure") {
+        task_title.innerHTML = `${exercise_id + 1}. ${data[exercise_id]["topic"]}&ensp;<i style="font-weight:normal">${data[exercise_id]["level"]}</i>`;
+    } else {
+        task_title.innerHTML = `${exercise_id + 1}.&ensp;<i style="font-weight:normal">${data[exercise_id]["level"]}</i>`;
+    }
+    
     
     main_content.appendChild(task_title);
 
@@ -257,6 +371,10 @@ function build_exercise(exercise_id) {
 
 
 tree.appendChild(level_part)
+if (document.title.split(" ")[0] == "Treasure") {
+    tree.appendChild(topic_part)
+}
+
 tree.appendChild(main_content)
 
 
