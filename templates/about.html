@@ -12,11 +12,6 @@
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous">
     </script>
-    <script>
-    $(function(){
-        $("#footer").load("footer.html");
-    });
-    </script>
 
     <title>About</title>
 </head>
@@ -96,7 +91,22 @@
 
 </section>
 
-<div id="footer"></div>
+<div class="container">
+    <footer class="footer">
+        <div class="row align-items-center" style="height: 10px">
+            <div class="col p-3 w-30">
+                <a href="https://hkdir.no/norwegian-directorate-for-higher-education-and-skills" target="_blank"><img src="../images/hkdir_alt.png" class="img-fluid" alt="hkdir"></a>
+            </div>
+            <div class="col p-3 w-30">
+                <a href="https://uit.no/startsida" target="_blank"><img src="../images/uit.png" class="img-fluid" alt="uit"></a>
+            </div>
+            <div class="col p-3 w-30">
+                <a href="https://www.hse.ru/en/" target="_blank"><img src="../images/hse.jpg" class="img-fluid" alt="hse" style="width: 250px;"></a>
+            </div>
+            
+        </div>
+    </footer>
+</div>
 
 </body>
 </html>

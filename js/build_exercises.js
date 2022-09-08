@@ -258,11 +258,6 @@ function build_exercise(exercise_id) {
         help_words.innerHTML = `Helpful words to use: ${data[exercise_id]["help_word"]}`;
         main_content.appendChild(help_words);
     }
-    // if (data[exercise_id]["write"] != null) {
-    //     let instructions = document.createElement("div");
-    //     instructions.innerHTML = `<b>Write </b> ${data[exercise_id]["write"]}`;
-    //     main_content.appendChild(instructions);
-    // }
 
 
     if (document.title.split(" ")[0] == "Treasure") {
@@ -297,12 +292,8 @@ function build_exercise(exercise_id) {
 
         let constr_amount = Object.keys(data[exercise_id]["construction"]).length
         let new_construction = ""
-
-        // new_answer += "<b>Constructions you can use:</b><br>"
         for (let id = 0; id < constr_amount; id++) {
-            // let construction = document.createElement("div");
             new_construction += data[exercise_id]["construction"][id] + "<br>";
-            // answer.appendChild(construction);
         }
 
         let construction = document.createElement("div");
@@ -336,9 +327,7 @@ function build_exercise(exercise_id) {
         let text_amount = Object.keys(data[exercise_id]["text_example"]).length
         let new_text = ""
         for (let id = 0; id < text_amount; id++) {
-            // let text = document.createElement("div");
             new_text += data[exercise_id]["text_example"][id] + "<br>";
-            // answer.appendChild(text);
         }
 
 
@@ -369,65 +358,7 @@ function build_exercise(exercise_id) {
         main_content.appendChild(text_button)
         main_content.appendChild(texts)
 
-    }
-    
-
-
-        
-    // let answer = document.createElement("div");
-    //     answer.setAttribute("class", "d-grid gap-3 d-md-flex");
-
-
-    //     let answer_text = document.createElement("p");
-    //     answer_text.style.display = "none";
-    //     answer_text.style.fontSize = "15px";
-    //     answer_text.style.fontStyle = "italic";
-        
-
-    //     let answ_button = document.createElement("button")
-    //     answ_button.setAttribute("type", "button")
-    //     answ_button.setAttribute("class", "btn btn-outline-primary btn-sm")
-        
-    //     answ_button.setAttribute("style", "margin: 3px")
-
-    //     let new_answer = ""
-
-    //     if (data[exercise_id]["answer"] != null) {
-    //         new_answer += data[exercise_id]["answer"]
-
-    //     }
-
-    //     if (data[exercise_id]["construction"] != null) {
-    //         let constr_amount = Object.keys(data[exercise_id]["construction"]).length
-    //         new_answer += "<b>Constructions you can use:</b><br>"
-    //         for (let id = 0; id < constr_amount; id++) {
-    //             // let construction = document.createElement("div");
-    //             new_answer += data[exercise_id]["construction"][id] + "<br>";
-    //             // answer.appendChild(construction);
-    //         }
-    //     }
-
-    //     if (data[exercise_id]["text_example"] != null) {
-    //         let text_amount = Object.keys(data[exercise_id]["text_example"]).length
-    //         new_answer += "<b>Examples of texts:</b><br>"
-    //         for (let id = 0; id < text_amount; id++) {
-    //             // let text = document.createElement("div");
-    //             new_answer += data[exercise_id]["text_example"][id] + "<br>";
-    //             // answer.appendChild(text);
-    //         }
-    //     }
-
-    //     answ_button.onclick = function() {
-    //         show_item(answer_text, new_answer);
-    //     };
-    //     answ_button.innerHTML = "Answer key";
-
-    //     answer.appendChild(answer_text)
-
-    //     main_content.appendChild(answ_button)
-    //     main_content.appendChild(answer)
-
-        
+    }    
 
 }
 
