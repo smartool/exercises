@@ -30,8 +30,8 @@ const exercises_amount = Object.keys(data).length
 
 
 
-function show_answer(x, answer_key) {
-    x.innerHTML = answer_key;
+function show_item(x, key) {
+    x.innerHTML = key;
     if (x.style.display === "block") {
         x.style.display = "none";
       } else {
@@ -65,30 +65,6 @@ function choose_ex() {
                 }
             }
 
-
-
-
-
-
-
-
-            // if (level == "All levels" & topic == "All topics") {
-            //     build_exercise(exercise_id)
-            // } else if (level_from_db.length == 5) {
-            //     var levels = level_from_db.split("/")
-            //     if (level == levels[0] || level == levels[1]) {
-            //         if (topic == topic_from_db || topic == "All topics") {
-            //             build_exercise(exercise_id)
-            //         }
-                    
-            //     }
-            // } else if (level == level_from_db || level == "All levels") {
-            //      if (topic == topic_from_db || topic == "All topics") {
-            //         build_exercise(exercise_id)
-            //      }
-                    
-                
-            // }
             
         }
     } else {
@@ -114,29 +90,6 @@ function choose_ex() {
     
 }
 
-
-// function choose_topic() {
-//     main_content.innerHTML = ""
-//     let topic = select_topic.options[select_topic.selectedIndex].text
-//     for (var exercise_id = 0; exercise_id < exercises_amount; exercise_id++) {
-//         let topic_from_db = data[exercise_id]["topic"]
-//         if (topic == "All topics") {
-//             build_exercise(exercise_id)
-//         } 
-//         // else if (level_from_db.length == 5) {
-//         //     var levels = level_from_db.split("/")
-//         //     if (level == levels[0] || level == levels[1]) {
-//         //         build_exercise(exercise_id)
-//         //     }
-//         // } 
-//         else if (topic == topic_from_db || topic_from_db == "All topics") {
-             
-//                 build_exercise(exercise_id)
-            
-//         }
-        
-//     }
-// }
 
 var level_part = document.createElement("div")
 level_part.setAttribute("class", "container px-4")
@@ -223,7 +176,7 @@ function build_exercise(exercise_id) {
     if (document.title.split(" ")[0] == "Treasure") {
         task_title.innerHTML = `${exercise_id + 1}. ${data[exercise_id]["topic"]}&ensp;<i style="font-weight:normal">${data[exercise_id]["level"]}</i>`;
     } else {
-        task_title.innerHTML = `${data[exercise_id]["name"]} <i style="font-weight:normal">${data[exercise_id]["level"]}</i>`;
+        task_title.innerHTML = `${exercise_id + 1}. ${data[exercise_id]["name"]} <i style="font-weight:normal">${data[exercise_id]["level"]}</i>`;
     }
     
     
@@ -253,7 +206,7 @@ function build_exercise(exercise_id) {
         let new_extra_task = data[exercise_id]["extra_task"]
 
         extra_task_button.onclick = function() {
-            show_answer(extra_task_text, new_extra_task);
+            show_item(extra_task_text, new_extra_task);
         };
         extra_task_button.innerHTML = "Extra task";
 
@@ -281,7 +234,7 @@ function build_exercise(exercise_id) {
         let new_ta_idea = data[exercise_id]["take_away_idea"]
 
         ta_idea_button.onclick = function() {
-            show_answer(ta_idea_text, new_ta_idea);
+            show_item(ta_idea_text, new_ta_idea);
         };
         ta_idea_button.innerHTML = "Take-away idea";
 
@@ -312,7 +265,8 @@ function build_exercise(exercise_id) {
     // }
 
 
-    let answer = document.createElement("div");
+    if (document.title.split(" ")[0] == "Treasure") {
+        let answer = document.createElement("div");
         answer.setAttribute("class", "d-grid gap-3 d-md-flex");
 
 
@@ -320,43 +274,18 @@ function build_exercise(exercise_id) {
         answer_text.style.display = "none";
         answer_text.style.fontSize = "15px";
         answer_text.style.fontStyle = "italic";
-        
+
 
         let answ_button = document.createElement("button")
         answ_button.setAttribute("type", "button")
         answ_button.setAttribute("class", "btn btn-outline-primary btn-sm")
-        
+
         answ_button.setAttribute("style", "margin: 3px")
 
-        let new_answer = ""
-
-        if (data[exercise_id]["answer"] != null) {
-            new_answer += data[exercise_id]["answer"]
-
-        }
-
-        if (data[exercise_id]["construction"] != null) {
-            let constr_amount = Object.keys(data[exercise_id]["construction"]).length
-            new_answer += "<b>Constructions you can use:</b><br>"
-            for (let id = 0; id < constr_amount; id++) {
-                // let construction = document.createElement("div");
-                new_answer += data[exercise_id]["construction"][id] + "<br>";
-                // answer.appendChild(construction);
-            }
-        }
-
-        if (data[exercise_id]["text_example"] != null) {
-            let text_amount = Object.keys(data[exercise_id]["text_example"]).length
-            new_answer += "<b>Examples of texts:</b><br>"
-            for (let id = 0; id < text_amount; id++) {
-                // let text = document.createElement("div");
-                new_answer += data[exercise_id]["text_example"][id] + "<br>";
-                // answer.appendChild(text);
-            }
-        }
+        let new_answer = data[exercise_id]["answer"]
 
         answ_button.onclick = function() {
-            show_answer(answer_text, new_answer);
+            show_item(answer_text, new_answer);
         };
         answ_button.innerHTML = "Answer key";
 
@@ -364,6 +293,139 @@ function build_exercise(exercise_id) {
 
         main_content.appendChild(answ_button)
         main_content.appendChild(answer)
+    } else {
+
+        let constr_amount = Object.keys(data[exercise_id]["construction"]).length
+        let new_construction = ""
+
+        // new_answer += "<b>Constructions you can use:</b><br>"
+        for (let id = 0; id < constr_amount; id++) {
+            // let construction = document.createElement("div");
+            new_construction += data[exercise_id]["construction"][id] + "<br>";
+            // answer.appendChild(construction);
+        }
+
+        let construction = document.createElement("div");
+        construction.setAttribute("class", "d-grid gap-3 d-md-flex");
+
+
+        let construction_text = document.createElement("p");
+        construction_text.style.display = "none";
+        construction_text.style.fontSize = "15px";
+        construction_text.style.fontStyle = "italic";
+
+
+        let construction_button = document.createElement("button")
+        construction_button.setAttribute("type", "button")
+        construction_button.setAttribute("class", "btn btn-outline-primary btn-sm")
+
+        construction_button.setAttribute("style", "margin: 3px")
+
+
+        construction_button.onclick = function() {
+            show_item(construction_text, new_construction);
+        };
+        construction_button.innerHTML = "Constructions and collocations you can use";
+
+        construction.appendChild(construction_text)
+
+        main_content.appendChild(construction_button)
+        main_content.appendChild(construction)
+        
+
+        let text_amount = Object.keys(data[exercise_id]["text_example"]).length
+        let new_text = ""
+        for (let id = 0; id < text_amount; id++) {
+            // let text = document.createElement("div");
+            new_text += data[exercise_id]["text_example"][id] + "<br>";
+            // answer.appendChild(text);
+        }
+
+
+        let texts = document.createElement("div");
+        texts.setAttribute("class", "d-grid gap-3 d-md-flex");
+
+
+        let text_data = document.createElement("p");
+        text_data.style.display = "none";
+        text_data.style.fontSize = "15px";
+        text_data.style.fontStyle = "italic";
+
+
+        let text_button = document.createElement("button")
+        text_button.setAttribute("type", "button")
+        text_button.setAttribute("class", "btn btn-outline-primary btn-sm")
+
+        text_button.setAttribute("style", "margin: 3px")
+
+
+        text_button.onclick = function() {
+            show_item(text_data, new_text);
+        };
+        text_button.innerHTML = "Examples of texts";
+
+        texts.appendChild(text_data)
+
+        main_content.appendChild(text_button)
+        main_content.appendChild(texts)
+
+    }
+    
+
+
+        
+    // let answer = document.createElement("div");
+    //     answer.setAttribute("class", "d-grid gap-3 d-md-flex");
+
+
+    //     let answer_text = document.createElement("p");
+    //     answer_text.style.display = "none";
+    //     answer_text.style.fontSize = "15px";
+    //     answer_text.style.fontStyle = "italic";
+        
+
+    //     let answ_button = document.createElement("button")
+    //     answ_button.setAttribute("type", "button")
+    //     answ_button.setAttribute("class", "btn btn-outline-primary btn-sm")
+        
+    //     answ_button.setAttribute("style", "margin: 3px")
+
+    //     let new_answer = ""
+
+    //     if (data[exercise_id]["answer"] != null) {
+    //         new_answer += data[exercise_id]["answer"]
+
+    //     }
+
+    //     if (data[exercise_id]["construction"] != null) {
+    //         let constr_amount = Object.keys(data[exercise_id]["construction"]).length
+    //         new_answer += "<b>Constructions you can use:</b><br>"
+    //         for (let id = 0; id < constr_amount; id++) {
+    //             // let construction = document.createElement("div");
+    //             new_answer += data[exercise_id]["construction"][id] + "<br>";
+    //             // answer.appendChild(construction);
+    //         }
+    //     }
+
+    //     if (data[exercise_id]["text_example"] != null) {
+    //         let text_amount = Object.keys(data[exercise_id]["text_example"]).length
+    //         new_answer += "<b>Examples of texts:</b><br>"
+    //         for (let id = 0; id < text_amount; id++) {
+    //             // let text = document.createElement("div");
+    //             new_answer += data[exercise_id]["text_example"][id] + "<br>";
+    //             // answer.appendChild(text);
+    //         }
+    //     }
+
+    //     answ_button.onclick = function() {
+    //         show_item(answer_text, new_answer);
+    //     };
+    //     answ_button.innerHTML = "Answer key";
+
+    //     answer.appendChild(answer_text)
+
+    //     main_content.appendChild(answ_button)
+    //     main_content.appendChild(answer)
 
         
 
