@@ -91,6 +91,43 @@ function choose_ex() {
 }
 
 
+function add_section (ex_id, key, button_name) {
+    let amount = Object.keys(data[ex_id][key]).length
+    let new_text = ""
+    for (let id = 0; id < amount; id++) {
+        new_text += data[ex_id][key][id] + "<br>";
+    }
+
+
+    let item = document.createElement("div");
+    item.setAttribute("class", "d-grid gap-3 d-md-flex");
+
+
+    let item_text = document.createElement("p");
+    item_text.style.display = "none";
+    item_text.style.fontSize = "15px";
+    item_text.style.fontStyle = "italic";
+
+
+    let item_button = document.createElement("button")
+    item_button.setAttribute("type", "button")
+    item_button.setAttribute("class", "btn btn-outline-primary btn-sm")
+
+    item_button.setAttribute("style", "margin: 3px")
+
+
+    item_button.onclick = function() {
+        show_item(item_text, new_text);
+    };
+    item_button.innerHTML = button_name;
+
+    item.appendChild(item_text)
+
+    main_content.appendChild(item_button)
+    main_content.appendChild(item)
+}
+
+
 var level_part = document.createElement("div")
 level_part.setAttribute("class", "container px-4")
 level_part.setAttribute("style", "margin-top: 20px")
@@ -290,6 +327,8 @@ function build_exercise(exercise_id) {
         main_content.appendChild(answer)
     } else {
 
+        
+
         let constr_amount = Object.keys(data[exercise_id]["construction"]).length
         let new_construction = ""
         for (let id = 0; id < constr_amount; id++) {
@@ -358,6 +397,7 @@ function build_exercise(exercise_id) {
         main_content.appendChild(text_button)
         main_content.appendChild(texts)
 
+        add_section (exercise_id, "reading", "Reading")
     }    
 
 }
