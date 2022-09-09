@@ -4,8 +4,7 @@ exercises:
                 level: A1
                 name: Магазин (shopping)
                 search_by: topic (A1) and choose Магазин (shopping)
-                write: 1 sentence using words from the topic. You can look through the words by clicking green buttons with arrows to the left of the word.
-                help_word: купить, одежда
+                write: 1 sentence using words купить, одежда and others from the topic. You can look through the words by clicking green buttons with arrows to the left of the word.
                 construction:
                         - красивая одежда
                         - удобная одежда
@@ -13,9 +12,43 @@ exercises:
                         - я хочу купить + Acc
                         - он/она купил/купила (себе) + Acc
                 text_example:
-                        - Я хочу купить сувенир. (или ограничиваемся одеждой?)
+                        - Я хочу купить сувенир.
                         - Она купила лампу.
+                        - Я хочу купить себе одежду.
                         - Эта одежда очень красивая(, но не очень удобная).
-                        - Он купил себе фотоаппарат.
+                        - Он купил фотоаппарат.
 
-        
+        -
+                level: A2
+                name: Погода (weather)
+                search_by: topic (A2) and choose Погода (weather)
+                write: 2 sentences using words юг, тёплый, лить and others from the topic. You can look through the words by clicking green buttons with arrows to the left of the word.
+                construction:
+                        - на юг/север/запад/восток
+                        - на юге/севере/западе/востоке
+                        - с юга/севера/запада/востока
+                        - на улице теплее
+                        - льёт дождь
+                text_example:
+                        - Сегодня высокая температура. Дует сильный ветер и льёт дождь.
+                        - Ты когда-нибудь был на севере Норвегии? Я был только на юге Норвегии.
+                        - Каждое лето я езжу на юг. На юге красивая природа и тепло.
+                        
+        -
+                level: B1
+                name: Здоровье (health)
+                search_by: topic (B1) and choose Здоровье (health)
+                write: 2-3 sentences using words принимать, операция, желудок, анализ and others from the topic. You can look through the words by clicking green buttons with arrows to the left of the word.
+                construction:
+                        - принимать лекарство
+                        - операция на + Loc
+                        - у + Gen болит желудок
+                        - боль в желудке
+                        - расстройство желудка
+                        - анализ крови
+                        - результаты анализа
+                text_example:
+                        - У меня сильная боль в животе. Врач сделал анализ крови. Результаты анализа показали, что у меня расстройство желудка. 
+                        - У меня завтра операция на горле. Я принимаю лекарства каждый час.
+                        
+      
