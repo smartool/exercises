@@ -47,25 +47,39 @@ function choose_ex() {
         for (var exercise_id = 0; exercise_id < exercises_amount; exercise_id++) {
             let level_from_db = data[exercise_id]["level"]
             let topic_from_db = data[exercise_id]["topic"]
-
+            var splitted_topic = topic_from_db.split(", ")            
             if (level == "All levels" || level_from_db == "All levels") {
                 if (topic == topic_from_db || topic == "All topics") {
                     build_exercise(exercise_id)
+                } else if (splitted_topic.length == 2) {
+                    if (topic == splitted_topic[0] || topic == splitted_topic[1]) {
+                        build_exercise(exercise_id)
+                    }
                 }
             } else if (level_from_db.length == 5) {
                 var levels = level_from_db.split("/")
                 if (level == levels[0] || level == levels[1]) {
                     if (topic == topic_from_db || topic == "All topics") {
                         build_exercise(exercise_id)
+                    } else if (splitted_topic.length == 2) {
+                        if (topic == splitted_topic[0] || topic == splitted_topic[1]) {
+                            build_exercise(exercise_id)
+                        }
                     }
                 }
             } else if (level == level_from_db || level == "All levels") {
                 if (topic == topic_from_db || topic == "All topics") {
                     build_exercise(exercise_id)
+                } else if (splitted_topic.length == 2) {
+                    if (topic == splitted_topic[0] || topic == splitted_topic[1]) {
+                        build_exercise(exercise_id)
+                    }
                 }
             }
 
+            splitted_topic = undefined;
             
+            // console.log(exercise_id + 1 , splitted_topic)
         }
     } else {
         main_content.innerHTML = ""
@@ -224,61 +238,7 @@ function build_exercise(exercise_id) {
         instructions.innerHTML = `<b>Choose:</b> ${data[exercise_id]["title"]}`;
         main_content.appendChild(instructions);
     }
-    if (data[exercise_id]["extra_task"] != null) {
-        let extra_task = document.createElement("div");
-        extra_task.setAttribute("class", "d-grid gap-3 d-md-flex");
-
-
-        let extra_task_text = document.createElement("p");
-        extra_task_text.style.display = "none";
-        // ta_idea_text.style.fontSize = "15px";
-        // ta_idea_text.style.fontStyle = "italic";
-
-        let extra_task_button = document.createElement("button")
-        extra_task_button.setAttribute("type", "button")
-        extra_task_button.setAttribute("class", "btn btn-outline-primary btn-sm")
-        extra_task_button.setAttribute("style", "margin: 3px")
-
-
-        let new_extra_task = data[exercise_id]["extra_task"]
-
-        extra_task_button.onclick = function() {
-            show_item(extra_task_text, new_extra_task);
-        };
-        extra_task_button.innerHTML = "Extra task";
-
-        extra_task.appendChild(extra_task_text)
-        main_content.appendChild(extra_task_button)
-        main_content.appendChild(extra_task)
-    }
-
-    if (data[exercise_id]["take_away_idea"] != null) {
-        let ta_idea = document.createElement("div");
-        ta_idea.setAttribute("class", "d-grid gap-3 d-md-flex");
-
-
-        let ta_idea_text = document.createElement("p");
-        ta_idea_text.style.display = "none";
-        ta_idea_text.style.fontSize = "15px";
-        ta_idea_text.style.fontStyle = "italic";
-
-        let ta_idea_button = document.createElement("button")
-        ta_idea_button.setAttribute("type", "button")
-        ta_idea_button.setAttribute("class", "btn btn-outline-primary btn-sm")
-        ta_idea_button.setAttribute("style", "margin: 3px")
-
-
-        let new_ta_idea = data[exercise_id]["take_away_idea"]
-
-        ta_idea_button.onclick = function() {
-            show_item(ta_idea_text, new_ta_idea);
-        };
-        ta_idea_button.innerHTML = "Take-away idea";
-
-        ta_idea.appendChild(ta_idea_text)
-        main_content.appendChild(ta_idea_button)
-        main_content.appendChild(ta_idea)
-    }
+    
     if (data[exercise_id]["search_by"] != null) {
         let instructions = document.createElement("div");
         instructions.innerHTML = `<b>Search by:</b> ${data[exercise_id]["search_by"]}`;
@@ -325,6 +285,62 @@ function build_exercise(exercise_id) {
 
         main_content.appendChild(answ_button)
         main_content.appendChild(answer)
+
+        if (data[exercise_id]["extra_task"] != null) {
+            let extra_task = document.createElement("div");
+            extra_task.setAttribute("class", "d-grid gap-3 d-md-flex");
+    
+    
+            let extra_task_text = document.createElement("p");
+            extra_task_text.style.display = "none";
+            // ta_idea_text.style.fontSize = "15px";
+            // ta_idea_text.style.fontStyle = "italic";
+    
+            let extra_task_button = document.createElement("button")
+            extra_task_button.setAttribute("type", "button")
+            extra_task_button.setAttribute("class", "btn btn-outline-primary btn-sm")
+            extra_task_button.setAttribute("style", "margin: 3px")
+    
+    
+            let new_extra_task = data[exercise_id]["extra_task"]
+    
+            extra_task_button.onclick = function() {
+                show_item(extra_task_text, new_extra_task);
+            };
+            extra_task_button.innerHTML = "Extra task";
+    
+            extra_task.appendChild(extra_task_text)
+            main_content.appendChild(extra_task_button)
+            main_content.appendChild(extra_task)
+        }
+    
+        if (data[exercise_id]["take_away_idea"] != null) {
+            let ta_idea = document.createElement("div");
+            ta_idea.setAttribute("class", "d-grid gap-3 d-md-flex");
+    
+    
+            let ta_idea_text = document.createElement("p");
+            ta_idea_text.style.display = "none";
+            ta_idea_text.style.fontSize = "15px";
+            ta_idea_text.style.fontStyle = "italic";
+    
+            let ta_idea_button = document.createElement("button")
+            ta_idea_button.setAttribute("type", "button")
+            ta_idea_button.setAttribute("class", "btn btn-outline-primary btn-sm")
+            ta_idea_button.setAttribute("style", "margin: 3px")
+    
+    
+            let new_ta_idea = data[exercise_id]["take_away_idea"]
+    
+            ta_idea_button.onclick = function() {
+                show_item(ta_idea_text, new_ta_idea);
+            };
+            ta_idea_button.innerHTML = "Take-away idea";
+    
+            ta_idea.appendChild(ta_idea_text)
+            main_content.appendChild(ta_idea_button)
+            main_content.appendChild(ta_idea)
+        }
     } else {
 
         
