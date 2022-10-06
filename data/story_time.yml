@@ -1,6 +1,6 @@
 ---
 exercises:
-       -
+        -
                 level: A1
                 name: Магазин (shopping)
                 search_by: topic (A1) and choose Магазин (shopping)
@@ -22,8 +22,88 @@ exercises:
                         - Я купила новую сумку, теперь хочу купить обувь (к ней). 
                         - Я купил бабушке красивые очки.
                         - Шерстяной шарф - отличный подарок!
-                        
         -
+                level: A1
+                name: Еда (food)
+                search_by: topic (A1) and choose Еда (food)
+                write: 1 sentence using words есть, суп and others from the topic. You can look through the words by clicking the green buttons with arrows to the left of the word.
+                construction:
+                        - на завтрак/обед/ужин
+                        - готовить + Acc
+                        - я люблю (есть) + Acc
+                        - хотеть + Inf
+                        - вкусная еда
+                        - бутерброд с Ins
+                text_example:
+                        - Я хочу есть.
+                        - Я люблю колбасу.
+                        - На обед мама готовит суп.
+                        - Он не ест рыбу.
+                reading:
+                        - На завтрак я съел бутерброд с колбасой и выпил кофе. Я пообедал в столовой, ел суп с мясом. Что ты хочешь на ужин? Я хочу выпить вина на ужин.
+                        
+         -
+                level: A1
+                name: Внутренний мир (mental experience)
+                search_by: topic (A1) and choose Внутренний мир (mental experience)
+                write: 1 sentence using words очень, нравиться and others from the topic. You can look through the words by clicking the green buttons with arrows to the left of the word.
+                construction:
+                        - хорошо/плохо себя чувствовать
+                        - (у)видеть + Acc
+                        - очень + Adj
+                        - мне нравится + Nom.Sg
+                        - желаю (вам) + Gen
+                text_example:
+                        - Я нехорошо себя чувствую.
+                        - Мой папа весёлый и умный.
+                        - Желаю вам хороших праздников!
+                        - Она очень спокойная.
+                        - Я вижу Петю.
+                reading:
+                        - Я люблю путешествовать. Помню, как была в Париже летом. Я видела Эйфелеву башню и Лувр. Я чувствовала себя отлично! Мне понравилось во Франции. Я мечтаю приехать в Париж ещё раз.
+                        
+         -
+                level: A1
+                name: Свободное время (leisure)
+                search_by: topic (A1) and choose Свободное время (leisure)
+                write: 1 sentence using words играть, гулять and others from the topic. You can look through the words by clicking the green buttons with arrows to the left of the word.
+                construction:
+                        - смотреть + Acc
+                        - гулять по + Dat/в + Loc
+                        - ничего не делать
+                        - играть в + Acc (game)
+                        - играть на + Loc (musical instrument)
+                text_example: 
+                        - Я смотрю фильм.
+                        - Маша играет на пианино.
+                        - Мы гуляем по Лондону.
+                        - Он играет в волейбол.
+                reading:
+                        - Я много работаю, но иногда у меня есть свободное время. В свободное время я люблю гулять по лесу и фотографировать природу. Иногда я хожу в театр или в музей. Но часто я ничего не делаю и просто отдыхаю.
+                        
+         -
+                level: A1
+                name: Учёба/работа (study/work)
+                search_by: topic (A1) and choose Учёба/работа (study/work)
+                write: 1 sentence using words учиться, работать and others from the topic. You can look through the words by clicking the green buttons with arrows to the left of the word.
+                construction:
+                        - работать + Ins
+                        - работать в + Loc
+                        - учить + Acc
+                        - учиться в + Loc
+                        - экзамен по + Dat
+                        - сдать экзамен
+                text_example: 
+                        - Я живу в общежитии.
+                        - Он работает врачом?
+                        - Игорь - студент. Он учится в университете.
+                        - Ирина работает в школе.
+                        - Мы учим историю.
+                        - Я сдала экзамен по философии!
+                reading:
+                        - Саша учится в университете. Она учит биологию и химию. Зимой Саша будет сдавать много экзаменов. Она хочет работать инженером. Саша живёт в общежитии. Ей нравится студенческая жизнь, но она устаёт из-за университета.
+                        
+         -
                 level: A2
                 name: Погода (weather)
                 search_by: topic (A2) and choose Погода (weather)
@@ -43,7 +123,7 @@ exercises:
                         - Ты когда-нибудь был на севере Норвегии? Я был только на юге Норвегии, в Осло.
                         - Каждое лето я езжу на юг. На юге красивая природа и теплее, чем здесь.
                         
-        -
+         -
                 level: B1
                 name: Здоровье (health)
                 search_by: topic (B1) and choose Здоровье (health)
