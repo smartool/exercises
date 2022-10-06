@@ -4,7 +4,7 @@ exercises:
                 level: A1
                 name: Магазин (shopping)
                 search_by: topic (A1) and choose Магазин (shopping)
-                write: 1 sentence using words купить, одежда and others from the topic. You can look through the words by clicking green buttons with arrows to the left of the word.
+                write: 1 sentence using words купить, одежда and others from the topic. You can look through the words by clicking the green buttons with arrows to the left of the word.
                 construction:
                         - красивая одежда
                         - удобная одежда
@@ -27,7 +27,7 @@ exercises:
                 level: A2
                 name: Погода (weather)
                 search_by: topic (A2) and choose Погода (weather)
-                write: 2 sentences using words юг, тёплый, лить and others from the topic. You can look through the words by clicking green buttons with arrows to the left of the word.
+                write: 2 sentences using words юг, тёплый, лить and others from the topic. You can look through the words by clicking the green buttons with arrows to the left of the word.
                 construction:
                         - на юг/север/запад/восток
                         - на юге/севере/западе/востоке
@@ -35,18 +35,20 @@ exercises:
                         - на улице теплее
                         - льёт дождь
                 text_example:
-                        - Сегодня высокая температура. Дует сильный ветер и льёт дождь.
-                        - Ты когда-нибудь был на севере Норвегии? Я был только на юге Норвегии.
-                        - Каждое лето я езжу на юг. На юге красивая природа и тепло.
+                        - Завтра поеду на юг. На юге теплее, чем в Москве.
+                        - Сегодня сильный ветер. На улице льёт дождь. 
+
                 reading: 
                         - Я люблю погоду весной. Температура поднимается, снег тает. Весенний ветер свежий, а воздух очень тёплый. Иногда льёт дождь, но обычно небо голубое, а солнце уже не зимнее и приятно греет.
-
+                        - Сегодня высокая температура, но дует сильный ветер и льёт дождь.
+                        - Ты когда-нибудь был на севере Норвегии? Я был только на юге Норвегии, в Осло.
+                        - Каждое лето я езжу на юг. На юге красивая природа и теплее, чем здесь.
                         
         -
                 level: B1
                 name: Здоровье (health)
                 search_by: topic (B1) and choose Здоровье (health)
-                write: 2-3 sentences using words принимать, операция, желудок, анализ and others from the topic. You can look through the words by clicking green buttons with arrows to the left of the word.
+                write: 2-3 sentences using words принимать, операция, желудок, анализ and others from the topic. You can look through the words by clicking the green buttons with arrows to the left of the word.
                 construction:
                         - принимать лекарство
                         - операция на + Loc
