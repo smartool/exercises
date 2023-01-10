@@ -4,18 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/bootstrap.css">
-
-    <!-- <script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous">
-    </script>
-    <script>
-    $(function(){
-        $("#footer").load("footer.html");
-    });
-    </script> -->
-
     <title>Treasure Hunt</title>
 </head>
 <body>
@@ -52,10 +40,38 @@
         </div>
         </div>
     </nav>
-
-
-    
-
+    <div class="container">
+        <div class="d-grid gap-3 d-md-flex">
+        <ol>
+            <li>
+                Choose your level. 
+            </li>
+            <li>
+                Choose the topic you would like to focus on.
+            </li>
+            <span id="points">...</span>
+            <button onclick="toggleText()" id="button_more" type="button" class="btn btn-outline-primary btn-sm" style="margin: 3px">
+                Show more
+            </button>
+            <span id="more_text" style="display: none;">
+            <li>
+                Each exercise has a ‘Choose by’ line which explains the section (analysis or dictionary) and level (sometimes it might differ from the level of the exercise) you’ll need to select in the SMARTool in order to choose an exercise.<br>
+                Note: you can access the SMARTool by using the ‘Visit SMARTool’ button at the top of the page.<br>
+                Follow the directions in the exercise and try to find your own answers to the questions. The questions are designed to help you think about and discover patterns in Russian. For many questions, there is more than one good answer.
+            </li>
+            <li>
+                After you’ve answered the questions stated in the text of the exercise, you can compare your answers to our suggestions by clicking the ‘Answer key’ button under the text. Another button, ‘Take-away idea’, will show you the summary of the answer.
+            </li>
+            <li>
+                Note that some exercises have another button, ‘Extra task’. The ‘Extra task’ offers further questions on the same topic, but might also present some spoilers of the answer. You can look at the ‘Extra Task’ after you have completed the main exercise. The answer to the ‘Extra Task’ is included in the answer key.
+            </li>
+            <button onclick="toggleText()" id="button_less" type="button" class="btn btn-outline-primary btn-sm" style="margin: 3px">
+                Show less
+            </button>
+            </span>
+        </ol>
+        </div>
+        </div>
     <div id="content">
         <script type="module" src="../js/build_exercises.js"></script>
     </div>
@@ -66,6 +82,25 @@
         integrity="sha256-8mtDTinb8+d2bC/9KhCJoCRBEylWUIV/3YEt5cSUvRk="
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@0.19.2/dist/axios.min.js"></script>
+    <script>
+        function toggleText() {
+
+        var points = document.getElementById("points");
+        var showMoreText = document.getElementById("more_text");
+        var buttonText = document.getElementById("button_more");
+
+        if (points.style.display === "none") {
+            showMoreText.style.display = "none";
+            points.style.display = "inline";
+            buttonText.style.display = "inline";
+        }
+        else {
+            showMoreText.style.display = "inline";
+            points.style.display = "none";
+            buttonText.style.display = "none";
+        }
+        }
+    </script>
    
 </body>
 </html>

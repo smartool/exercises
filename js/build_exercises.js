@@ -10,6 +10,7 @@ if (document.title.split(" ")[0] == "Treasure") {
 
 
 
+
 let json_data = jsyaml.loadAll(r.data);
 let records = {};
 
@@ -27,6 +28,7 @@ main_content.setAttribute("id", "main")
 main_content.setAttribute("class", "container px-4")
 
 const exercises_amount = Object.keys(data).length
+
 
 
 
