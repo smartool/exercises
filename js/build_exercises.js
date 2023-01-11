@@ -415,7 +415,7 @@ function build_exercise(exercise_id) {
         main_content.appendChild(text_button)
         main_content.appendChild(texts)
 
-        add_section (exercise_id, "reading", "Reading challange")
+        add_section (exercise_id, "reading", "Reading challenge")
         add_section (exercise_id, "translation", "Translation")
     }    
 
